@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Events</title>
+    <link rel="icon" href="icon/js-icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <nav>
+    <ul>
+     <li><a href="index.html">JavaScript | Events</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div class="title">
+        <h1>Mouse Events</h1>
+        <h3><big>click : </big>Bir öğeye tıklanıldığında tetiklenir.</h3>
+        <h3><big>dblclick :  </big>Bir öğeye çift tıklandığında tetiklenir.</h3>
+        <h3><big>mousedown : </big>Fare düğmesine basıldığında tetiklenir.</h3>
+        <h3><big>mouseup : </big>Fare düğmesi bırakıldığında tetiklenir.</h3>
+        <h3><big>mousemove :  </big>Fare hareket ettirildiğinde tetiklenir.</h3>
+        <h3><big>mouseenter : </big>Fare, öğenin içine girdiğinde tetiklenir (bubbling yok).</h3>
+        <h3><big>mouseleave : </big>Fare, öğeden çıktığında tetiklenir (bubbling yok).</h3>
+        <h3><big>mouseover : </big>Fare, öğenin üzerine geldiğinde tetiklenir.</h3>
+        <h3><big>mouseout : </big>Fare, öğeden çıktığında tetiklenir.</h3>
+        <h3><big>contextmenu : </big>Kullanıcı sağ tıkladığında tetiklenir.</h3> 
+    </div>
+    <div class="title"> 
+        <h1>Keyboard Events</h1>
+        <h3><big>keydown : </big>Klavye tuşuna basıldığında tetiklenir.</h3>
+        <h3><big>keypress : </big>(Artık kullanılmıyor) Karakter girdisi olduğunda tetiklenirdi.</h3>
+        <h3><big>keyup : </big>Klavye tuşu bırakıldığında tetiklenir.</h3>
+    </div>
+    <div class="title">
+        <h1>Form/Input Events</h1>
+        <h3><big>input : </big>Kullanıcı input alanına veri girdiğinde tetiklenir.</h3>
+        <h3><big>reset : </big>Form sıfırlandığında tetiklenir.</h3>
+        <h3><big>change : </big>Input veya select gibi alanlarda değer değiştiğinde tetiklenir.</h3>
+        <h3><big>blur : </big>Odak kaybolduğunda tetiklenir.</h3>
+        <h3><big>focusout : </big>Bir alt öğe odaktan çıktığında tetiklenir (bubbling var).</h3>
+        <h3><big>focus : </big>Öğe odaklandığında tetiklenir.</h3>
+        <h3><big>focusin : </big>Bir alt öğe odaklandığında tetiklenir (bubbling var).</h3>
+        <h3><big>submit : </big>Bir form gönderildiğinde tetiklenir.</h3>
+        <h3><big>invalid : </big>Form doğrulaması başarısız olduğunda tetiklenir.</h3>
+    </div>
+    <div class="title">
+        <h1>Clipboard Events</h1>
+        <h3><big>copy : </big>Kullanıcı içerik kopyaladığında tetiklenir.</h3>
+        <h3><big>cut : </big>Kullanıcı içerik kestiğinde tetiklenir.</h3>
+        <h3><big>paste : </big>Kullanıcı içerik yapıştırdığında tetiklenir.</h3>
+    </div>
+    <div class="title">
+        <h1>Drag and Drop Events</h1>
+        <h3><big>drag : </big>Öğe sürüklenirken tekrar tekrar tetiklenir.</h3>
+        <h3><big>dragenter : </big>Sürüklenen öğe hedefin üzerine geldiğinde tetiklenir.</h3>
+        <h3><big>dragend : </big>Sürükleme bittiğinde tetiklenir.</h3>
+        <h3><big>dragover : </big>Sürüklenen öğe hedefin üzerinde hareket ettikçe tetiklenir.</h3>
+        <h3><big>dragleave : </big>Sürüklenen öğe hedefin dışına çıktığında tetiklenir.</h3>
+        <h3><big>dragstart : </big>Sürükleme başladığında tetiklenir.</h3>
+        <h3><big>drop : </big>Sürüklenen öğe hedefe bırakıldığında tetiklenir.</h3>
+    </div>
+    <div class="title">
+        <h1>Window Events</h1>
+        <h3><big>load : </big>Sayfa tamamen yüklendiğinde tetiklenir.</h3>
+        <h3><big>unload : </big>Sayfa kapatılırken tetiklenir.</h3>
+        <h3><big>beforeunload : </big>Kapanmadan hemen önce kullanıcıyı uyarır.</h3>
+        <h3><big>resize : </big>Pencere boyutu değiştirildiğinde tetiklenir.</h3>
+        <h3><big>scroll : </big>Kullanıcı sayfada kaydırma yaptığında tetiklenir.</h3>
+        <h3><big>error : </big>Bir hata oluştuğunda tetiklenir.</h3>
+        <h3><big>hashchange : </big>URL'deki hash değeri değiştiğinde tetiklenir.</h3>
+        <h3><big>popstate : </big>Tarayıcı geçmişi değiştiğinde tetiklenir (history API ile).</h3>
+        <h3><big>storage : </big>Aynı domain'deki başka sekmede localStorage değiştiğinde tetiklenir.</h3>
+        <h3><big>online : </big>Tarayıcı çevrimiçi olduğunda tetiklenir.</h3>
+        <h3><big>offline : </big>Tarayıcı çevrimdışı olduğunda tetiklenir.</h3>
+    </div>
+    <div class="title">
+        <h1>Media Events</h1>
+        <h3><big>play : </big>Medya oynatılmaya başladığında tetiklenir.</h3>
+        <h3><big>pause : </big>Medya duraklatıldığında tetiklenir.</h3>
+        <h3><big>ended : </big>Medya bittiğinde tetiklenir.</h3>
+        <h3><big>volumechange : </big>Medya bittiğinde tetiklenir.</h3>
+        <h3><big>timeupdate : </big>Oynatma zamanı güncellendiğinde tetiklenir.</h3>
+        <h3><big>seeking : </big>Yeni konuma atlama başladığında tetiklenir.</h3>
+        <h3><big>seeked : </big>Yeni konuma atlama tamamlandığında tetiklenir.</h3>
+        <h3><big>loadeddata : </big>Veri yüklendiğinde tetiklenir.</h3>
+        <h3><big>canplay : </big>Medya oynatılabilir hale geldiğinde tetiklenir.</h3>
+        <h3><big>canplaythrough : </big>Medya takılmadan oynatılabilecek hale geldiğinde tetiklenir.</h3>
+        <h3><big>durationchange : </big>Medyanın süresi değiştiğinde tetiklenir.</h3>
+        <h3><big>ratechange : </big>Oynatma hızı değiştiğinde tetiklenir.</h3>
+        <h3><big>waiting : </big>Medya duraksadığında tetiklenir (buffering).</h3>
+    </div>
+    <div class="title">
+        <h1>Animation Events</h1>
+        <h3><big>animationstart : </big>CSS animasyonu başladığında tetiklenir.</h3>
+        <h3><big>animationend : </big>CSS animasyonu sona erdiğinde tetiklenir.</h3>
+        <h3><big>animationiteration : </big>CSS animasyonu bir turu tamamladığında tetiklenir.</h3>
+    </div>
+    <div class="title">
+        <h1>Transition Events</h1>
+        <h3><big>transitionstart : </big>CSS geçişi başladığında tetiklenir.</h3>
+        <h3><big>transitionend : </big>CSS geçişi bittiğinde tetiklenir.</h3>
+        <h3><big>transitionrun : </big>Geçiş başladığında (tam devreye girmeden) tetiklenir.</h3>
+        <h3><big>transitioncancel : </big>Geçiş iptal edildiğinde tetiklenir.</h3>
+    </div>
+    <div class="title">
+        <h1>Touch Events</h1>
+        <h3><big>touchstart : </big>Bir parmak ekranla temas ettiğinde tetiklenir.</h3>
+        <h3><big>touchmove : </big>Parmak ekran üzerinde hareket ettirildiğinde tetiklenir.</h3>
+        <h3><big>touchend : </big>Parmak ekranla teması kestiğinde tetiklenir.</h3>
+        <h3><big>touchcancel : </big>Sistem, dokunmayı iptal ettiğinde tetiklenir (ör. çağrı geldiğinde).</h3>
+    </div>
+    <div class="title">
+        <h1>Pointer Events</h1>
+        <h3><big>pointerover : </big>İşaretçi öğenin üzerine geldiğinde tetiklenir.</h3>
+        <h3><big>pointerenter : </big>İşaretçi öğeye girdiğinde tetiklenir (bubbling yok).</h3>
+        <h3><big>pointerdown : </big>İşaretçi ile öğeye basıldığında tetiklenir.</h3>
+        <h3><big>pointermove : </big>İşaretçi hareket ettiğinde tetiklenir.</h3>
+        <h3><big>pointerup : </big>İşaretçi bırakıldığında tetiklenir.</h3>
+        <h3><big>pointercancel : </big>İşaretçi iptal edildiğinde tetiklenir.</h3>
+        <h3><big>pointerout : </big>İşaretçi öğeden çıktığında tetiklenir.</h3>
+        <h3><big>pointerleave : </big>İşaretçi öğeyi terk ettiğinde tetiklenir (bubbling yok).</h3>
+    </div>
+    <div class="title">
+        <h1>Diğer (Misc)</h1>
+        <h3><big>wheel : </big>Fare tekerleği döndürüldüğünde tetiklenir.</h3>
+        <h3><big>deviceorientation : </big>Cihaz yönü değiştiğinde tetiklenir.</h3>
+        <h3><big>devicemotion : </big>Cihaz hareket ettiğinde tetiklenir.</h3>
+        <h3><big>fullscreenchange : </big>Tam ekran modu değiştiğinde tetiklenir.</h3>
+        <h3><big>fullscreenerror : </big>Tam ekran modu hatası oluştuğunda tetiklenir.</h3>
+        <h3><big>visibilitychange : </big>Sayfanın görünürlük durumu değiştiğinde tetiklenir (arka plana geçtiğinde).</h3>
+    </div>
+  </section>
+  <footer>
+      <a href="https://github.com/erensogutlu" target="_blank">GitHub<i class="fa-brands fa-github"></i></a>
+      <div id="examples"><a href="https://www.w3schools.com/js/js_events_examples.asp" target="_blank">Examples</a></div>
+      <div id="date"></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

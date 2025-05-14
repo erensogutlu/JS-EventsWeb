@@ -1,0 +1,84 @@
+body {
+   margin: 0px;
+   font-family: "Quicksand", sans-serif;
+   font-optical-sizing: auto;
+}
+
+:root {
+    --ana-renk : #2e86c1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--ana-renk);
+}
+
+li {
+  float: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+big {
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.title {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.418) 0px 22px 70px 4px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.title h1 {
+    font-size: 30px;
+    color: var(--ana-renk);
+}
+
+#date {
+    float: left;
+    font-size: 20px;
+}
+
+#examples {
+    float: right;
+    font-size: 20px;
+}
+
+footer {
+    background-color: var(--ana-renk);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    float: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer i {
+   margin-left: 5px;
+}
